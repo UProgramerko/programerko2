@@ -1,0 +1,86 @@
+Varijable
+=========
+
+Vjerujemo da znate da više ljudi može koristiti jedan program i da to znate iz vlastitog iskustva. Izrađujemo programe s namjerom da olakšamo rješavanje i izvršavanje zadataka. Stvaramo ih kako bi se zabavili, opustili i povezali s drugim ljudima. 
+
+Činjenica da jedan program može koristiti više ljudi koji unose svoje podatke i dobivaju odgovarajuće rezultate govori o tome da programiranje ima izvrstan koncept upravljanja i korištenja računalne memorije. 
+
+Smatrajte da je memorija digitalnog uređaja ogromna, mislimo na ogromnu, gotovo beskrajnu sobu s redovima i redovima polica. Zamislite da podatke možete staviti u svaki odjeljak na svakoj polici. Na kraju, zamislite da možete imenovati svaki od ovih odjeljaka što god želite i čim ga nazovete, informacije u njemu postaju odmah dostupne. 
+
+Mi nazivamo ove odjeljke **varijable**. računalne memorije. Varijabla potencijalno može sadržavati samo jedan podatak (broj, niz, vrijednosti točne ili netočne itd.)).   
+
+Pitaj i čekaj (Ask and wait)
+----------------------------
+
+U kategoriji **Očitanja (Sensing)** postoji blok **Pitaj i čekaj (Ask and wait)** |BlokAskWait|. Ovaj blok nam omogućuje da od korisnika nešto zatražimo (obično u obliku zahtjeva ili pitanja), a zatim pričekamo da korisnik klikne gumb |Stikliranje| ili pritisne *Enter*.
+  .. |BlokAskWait| image:: ../_images/promenljive/BlokAskWait.png
+  .. |Stikliranje| image:: ../_images/promenljive/Stikliranje.png
+
+Odgovor korisnika unosi se u varijablu |VAnswer|, i program nastavlja raditi.
+    .. |VAnswer| image:: ../_images/promenljive/VAnswer.png
+
+|Uradi| Najbolje je da ovaj blok odmah koristimo. Napravit ćemo program u kojem mačka pita korisnika kako se zove, a zatim će ponoviti ime i reći da je to vrlo simpatično ime.
+  .. |Uradi| image:: ../_images/Uradi.png
+
+.. image:: ../_images/promenljive/KodPromenljivaAnswer.png   
+   :align: center
+
+Stoga ćemo program pokrenuti klikom na zelenu zastavu. Nakon naredbe |BlokAsk|, program se prestaje pokretati, očekujući da će korisnik upisati svoj odgovor u polje za unos i kliknuti na gumb |Stikliranje| ili pritisnuti *Enter*. U tom trenutku sadržaj varijable |VAnswer| ne postoji |Answer|.
+    .. |BlokAsk| image:: ../_images/promenljive/BlokAsk.png
+    .. |Answer| image:: ../_images/promenljive/Answer.png
+
+Kad korisnik unese odgovor (npr. Mima) i klikne gumb |Stikliranje| ili pritiskom na *Enter*, sadržaj varijable |VAnswer| će biti |AnswerMima|.
+    .. |AnswerMima| image:: ../_images/promenljive/AnswerMima.png
+
+Mačka sada može reći niz (string) |BlokSay|, koju smo napravili pomoću bloka za spajanje string |Join| (u polje *jabuka* stavimo blok |VAnswer|, a u polje *banana* upišemo "je lijepo ime!". 
+    .. |Join| image:: ../_images/promenljive/Join.png
+    .. |BlokSay| image:: ../_images/promenljive/BlokSay.png
+
+Na donjoj slici možete vidjeti naš program kada se pokreće.
+
+.. image:: ../_images/promenljive/TokPromenljivaAnswer.png   
+     :align: center
+
+Kreiranje varijabli
+-------------------
+
+Pogledajmo situaciju u kojoj korisnik unosi 4 broja, a zatim program dodaje brojeve i prikazuje zbroj. Točno je da blok **Pitaj i čekaj (Ask and wait)** |BlokAskWait| korisniku omogućuje unos određene vrijednosti koja će se tada smjestiti u varijablu |VAnswer|. Ipak, što se događa kad trebamo 4 odgovora?
+
+.. mchoice:: Promenljive1
+   :answer_a: 50
+   :answer_b: 30
+   :answer_c: 20
+   :answer_d: 80
+   :correct: d
+   :feedback_a: Varijabla sadrži samo jedan podatak (broj, niz, vrijednost istinita ili lažna itd.). Razmislite ponovo i odaberite točan odgovor. 
+   :feedback_b: Varijabla sadrži samo jedan podatak (broj, niz, vrijednost istinita ili lažna itd.). Razmislite ponovo i odaberite točan odgovor.
+   :feedback_c: Varijabla sadrži samo jedan podatak (broj, niz, vrijednost istinita ili lažna itd.). Razmislite ponovo i odaberite točan odgovor.
+   :feedback_d: U pravu ste, dobro učinjeno! Varijabla |VAnswer| sadrži samo krajnji odgovor korisnika, a to je broj 20. Lik će reći 80 (20+20+20+20).
+
+   Korisnik upisuje sljedeće brojeve jedan za drugim: 5, 10, 15 i 20. Kada se program prikazan na slici pokrene, lik će reći:
+
+   .. image:: ../_images/promenljive/4pitanja.png   
+     :align: center
+
+Očito je da nam treba više od jedne varijable kako bismo mogli prikazati točan iznos.
+
+Stvorimo varijable u kategoriji **Varijable (Variables)**, klikom na gumb **Napravi varijablu (Make a variable)**. Otvorit će se prozor u koji možemo upisati ime varijable i tada odlučujemo želimo li je učiniti dostupnom svim likovima ili samo liku koji je aktivan dok stvaramo varijablu. Također možemo provjeriti mogućnost koja varijablu sprema na poslužitelju, u oblak podataka. Napokon, klikom na gumb **OK** kreiramo varijablu.
+
+Na donjoj slici vidimo blok koji će nam postati dostupan nakon što stvorimo varijablu. Prvim blokom postavit ćemo vrijednost varijable, drugi možemo koristiti ako želimo povećati ili smanjiti tu vrijednost, dok se treći i četvrti koriste kako bi varijabla bila vidljiva ili je sakrila. 
+
+.. image:: ../_images/promenljive/MakeVariable.png   
+   :align: center
+
+.. mchoice:: Promenljive2
+   :answer_a: Pokretanje skripti A i B ima isti rezultat 
+   :answer_b: Pokretanje skripti A i B ima različiti rezultat 
+   :correct: a
+   :feedback_a: Odgovor je točan! Iako su različiti, pokretanje oba programa ima isti rezultat. 
+   :feedback_b: Razmislite o svom odgovoru. Ako i dalje mislite isto, napravite ove programe u programu Scratch i pokrenite ih. Ne zaboravite se organizirati tako da se vrijednosti varijabli mogu vidjeti na pozornici.
+
+   Analizirajte skripte i označite ispravnu izjavu: 
+
+   .. image:: ../_images/promenljive/4brojaProm.png   
+     :align: center
+
+

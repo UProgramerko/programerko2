@@ -1,0 +1,100 @@
+Ponavljanje
+===========
+
+Već smo spomenuli da je ponavljanje jedne ili više naredbi (blokova) moćan koncept u programiranju. Kad se neke naredbe u programu izvršavaju više puta, kažemo da program sadrži petlje. Prije smo koristili ovaj koncept nekoliko puta.
+
+.. |Repeat10| image:: ../_images/ponavljanje/Repeat10.png
+.. |RepeatF| image:: ../_images/ponavljanje/RepeatF.png
+.. |RepeatU| image:: ../_images/ponavljanje/RepeatU.png
+
+U programu Scratch imamo 3 vrste blokova koji ponavljaju naredbe:
+
+•	Blok koji ponavlja naredbe određeni broj puta; 
+•	Blok koji ponavlja naredbe beskonačan broj puta;
+•	Blok koji ponavlja naredbe dok se ne ispuni određeni uvjet.
+
+Umetnit ćemo blokove koje trebamo ponoviti u jedan od tih blokova.
+
+Blok koji ponavlja naredbe određeni broj puta
+---------------------------------------------
+
+.. |Uradi| image:: ../_images/Uradi.png
+.. |Repeat10a| image:: ../_images/ponavljanje/Repeat10a.png
+.. |Repeat5| image:: ../_images/ponavljanje/Repeat5.png
+
+.. image:: ../_images/ponavljanje/Repeat10.png
+   :align: center
+
+Koristili smo blok koji ponavlja naredbe određeni broj puta u projektu *Farm* (više informacija možete pronaći u lekciji *Izgled (Looks)*).  
+
+Lik pileta u programu simulirao je pokrete kljucanja mijenjajući kostime a, b i c 10 puta. Nakon ove simulacije, pile se povećao u veličini za 10. Naš cilj je bio povećati veličinu lika pile za 50, pa smo ponovili dio koda koji je povećao veličinu lika 5 puta. Da bismo postigli željeno ponašanje, koristili smo blokove |Repeat10a| i |Repeat5|.
+
+Na donjoj slici skratili smo dio skripte koji se odnosi na ponavljanje naredbi i napravili smo isti program, ali ovaj put bez korištenja blokova ponavljanja. Scenarij koji smo dobili bio je zaista dugačak, pa smo ga zbog jasnoće morali podijeliti u pet stupaca. 
+
+.. image:: ../_images/ponavljanje/PileBezRepeat.png
+   :width: 1200px   
+   :align: center
+
+|Uradi| Stvorite program *Farm* bez upotrebe blokova za ponavljanje. Usporedite svoj kod s našim. Vjerujemo da možete vidjeti kako slaganje identičnih skupina blokova čini program duljim, teškim za razumijevanje i nadogradnju.
+
+Blok koji ponavlja naredbe beskonačno broj puta
+-----------------------------------------------
+
+.. |StopAll| image:: ../_images/ponavljanje/StopAll.png
+.. |StopTS| image:: ../_images/ponavljanje/StopTS.png
+.. |StopOS| image:: ../_images/ponavljanje/StopOS.png
+
+.. image:: ../_images/ponavljanje/RepeatF.png
+   :align: center
+
+Ovaj blok za ponavljanje naredbi radi beskonačan broj puta. Izvođenje ovog bloka nikada se ne zaustavlja samostalno. Moramo ga zaustaviti klikom na gumb koji zaustavlja program (crveni gumb pored zelene zastave) ili upotrebom jednog od sljedećih blokova |StopAll| / |StopTS| / |StopOS|, iz kategorije **Upravljanje (Control)**.
+
+Koristili smo blok koji ponavlja naredbe neograničen broj puta u projektu *Mačka lovi miša* (više informacija možete pronaći u lekciji *Kretanje (Motion)*).
+
+.. mchoice:: PonavljanjeZ1
+   :answer_a: Novi blokovi mogu se umetnuti u sam blok, tako da nema potrebe za nastavljanjem skripte.
+   :answer_b: To je greška u Scratchu. Blok za beskonačno ponavljanje mora imati mogućnost za nastavak skripte. 
+   :answer_c: Dodavanje blokova besmisleno je jer se oni nikada ne bi izvodili.  
+   :feedback_a: Opcija za umetanje novih blokova u blok |RepeatF| ne pruža mogućnost slaganja skripti koje se nikada neće ponoviti, samo dodaje naredbe koje će se ponavljati neograničen broj puta.    
+   :feedback_b: Kolika je vjerojatnost da jedan od najčešće korištenih blokova u Scratchu nije pravilno izveden? Predlažemo da ponovno razmislite o pitanju i date novi odgovor. 
+   :feedback_c: Sjajan zaključak, bravo!  
+   :correct: c
+
+   Analizirajte izgled blokova za ponavljanje naredbi. Možete vidjeti da blok, koji ponavlja naredbe neograničen broj puta, nema mogućnost povezivanja s drugim blokovima, tj. ne možete dodati drugi blok na njega. Zašto?
+   
+
+Blok koji ponavlja naredbe dok se ne ispuni određeni uvjet
+----------------------------------------------------------
+
+.. |VSec| image:: ../_images/ponavljanje/Vsec.png
+
+.. image:: ../_images/ponavljanje/RepeatU.png
+   :align: center
+
+Ovaj blok za ponavljanje naredbi traje sve dok se ne ispuni određeni uvjet. Skripte unutar ovog bloka izvršavaju se na temelju testa koji određuje je li uvjet postavljen u blok istinit ili ne. Ovaj blok koristimo kada ne znamo koliko puta moramo ponoviti naredbe unutar bloka za ponavljanje, i stoga želimo da se oni izvode dok se neki uvjet ne ispuni.
+
+.. mchoice:: PonavljanjeZ2
+   :answer_a: Blok koji ponavlja naredbe određeni broj puta.
+   :answer_b: Blok koji ponavlja naredbe beskonačno broj puta. 
+   :answer_c: Blok koji ponavlja naredbe dok se ne ispuni određeni uvjet.  
+   :feedback_a: Ako odaberete ovaj blok, ispaljivanje raketa nema nikakve veze s vašom razinom energije, zar ne?  
+   :feedback_b: Ako odaberete ovaj blok, ispaljivanje raketa nema nikakve veze s vašom razinom energije, zar ne?
+   :feedback_c: U pravu si! Broj ponavljanja ovisi o ispunjavanju uvjeta. Onog trenutka kad vam razina energije lika padne ispod određene vrijednosti, ispaljivanje raketa će se zaustaviti.  
+   :correct: c
+
+   Želite stvoriti program u kojem vaš lik (top) ispaljuje rakete na oblake koji nose nevrijeme, dok njegova razina energije ne padne ispod određene vrijednosti. Koji blok za ponavljanje naredbi ćete koristiti?
+
+Pokazat ćemo kako djeluje *blok koji ponavlja naredbe dok se ne ispuni određeni uvjet* - stvorit ćemo program koji funkcionira kao tajmer, tj. odbrojava sekunde od unesene vrijednosti do nule.
+
+Za ovaj program stvorit ćemo varijablu |VSec|, koji će pohraniti vrijednost preostalih sekundi dok brojač odbrojava. Zamolit ćemo korisnika da unese određeni broj sekundi. Tada ćemo započeti odbrojavanje. Po isteku unesenog vremena, čut ćemo zvučni signal.
+
+Donja slika sadrži naš prijedlog koda programa s komentarima, koji služe kao objašnjenje. Programerima je korisno komentirati skripte i objasniti što određeni blokovi rade. Komentiranje olakšava drugim programerima razumijevanje i nadogradnju programa koje stvaramo. Komentar možete dodati klikom desne tipke miša na skriptu i odabirom opcije **Dodaj komentar (Add comment)**.
+
+.. image:: ../_images/ponavljanje/Tajmer.png
+      :align: center
+
+|Uradi| Program *Timer* možete pronaći na linku |https://scratch.mit.edu/projects/326420353|. Nadogradite ga dodavanjem zvuka koji otkucava sat, a koji će se čuti kako brojač odbrojava.
+
+.. |https://scratch.mit.edu/projects/326420353| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326420353" target="_blank">https://scratch.mit.edu/projects/326420353</a>

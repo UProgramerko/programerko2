@@ -1,0 +1,89 @@
+Procedure
+=========
+
+Program ne moramo kreirati kao cjelinu.
+
+Daleko je jasnije ako dijelimo dijelove koda na manje odvojene dijelove - **procedure**. Definiranje procedura olakšava pisanje programa i pronalaženje grešaka. Zato je dobro držati procedure u svom "ruksaku". Na taj način moći ćete ih koristiti u drugim kreiranim programima, a ne gubite vrijeme na njihovo ponovno stvaranje. 
+
+Emitiranje
+----------
+
+Programi napravljeni u programu Scratch obično imaju višestruke kontakte koji međusobno djeluju. Interakciju možemo definirati sami, a možemo koristiti i ugrađeni postupak koji omogućuje likovima da emitiraju poruke i utječu na pokretanje programa. Korištenje postupka emitiranja značajno će smanjiti broj blokova u programu i olakšat će nam čitanje koda. 
+
+.. image:: ../_images/procedure/ProcZ1a.png
+   :width: 800px   
+   :align: center
+
+.. image:: ../_images/procedure/ProcZ1b.png
+   :width: 800px   
+   :align: center
+
+.. mchoice:: ProcedureZ1
+   :answer_a: Program A
+   :answer_b: Program B
+   :feedback_a: Kada pokrenemo program, vidimo da sve tri djevojke istovremeno pozdravljaju na svom jeziku. To ne bi bio slučaj u stvarnom životu, tijekom normalnog razgovora. Obično slušamo osobu s kojom razgovaramo, a zatim razgovaramo.     
+   :feedback_b: U pravu si! Kada emitiramo poruke, dozvoljavamo svima koji sudjeluju u razgovoru da budu ljubazni - a ne da vas međusobno prekidaju.
+   :correct: b
+
+   Postoje dva programa - A i B, prikazana na gornjim slikama. Oba programa sadrže 3 lika, djevojke koje govore engleski, njemački i francuski. Ispod svake djevojke nalaze se blokovi koji im pripadaju (blokovi im dopuštaju da pozdrave ostale dvije na svom jeziku). Napravite programe koje vidite na gornjim slikama. Analizirajte što se događa kada pokreću. Koji program predstavlja simulaciju normalnog (redovitog) razgovora između tri stranca? 
+
+.. reveal:: sakrivanjeDevojke
+   :showtitle: Pogledaj video-uputstvo za kreiranje razgovora tri djevojke
+   :hidetitle: Sakrij video-uputstvo
+ 
+   **Pogledaj proces izrade programa koji omogućava govornicama da ne upadaju jedna drugoj u riječ:**
+     
+   .. youtube:: QgCCzBw6DKU
+      :width: 735
+      :height: 415
+      :align: center
+
+Definiranje nove procedure
+--------------------------
+
+.. |Vazno| image:: ../_images/Vazno.png
+
+.. |Uradi| image:: ../_images/Uradi.png
+
+U Scratchu možemo stvoriti novu proceduru koja bi odgovarala našim potrebama. 
+
+Zamislite da želimo stvoriti program koji na pozornicu crta cvijet. Cvijet je izrađen od latica. Stoga su nam potrebna dva postupka:
+
+•	**Latica**, unutar kojeg ćemo definirati crtanje jedne latice, i
+•	**Cvijet**, unutar kojeg ćemo definirati crtanje pet latica.
+
+Drugim riječima, procedura **Cvijet** će nazvati proceduru **Latica**, dok će glavni program pozivati proceduru **Cvijet**.
+
+Proceduru kreiramo klikom na kategoriju **Moji blokovi (My Blocks)**, gdje trebamo kliknuti na gumb **Napravi blok (Make a Block)**. Otvorit će se prozor koji će nam omogućiti imenovanje naše procedure.
+
+.. image:: ../_images/procedure/ProcLatica.png
+   :width: 600px   
+   :align: center
+
+Ako želite da vaš cvijet ima iste latice poput onoga na donjoj slici, kreirajte proceduru **Latica** koju smo prikazali:
+
+.. image:: ../_images/procedure/KodProcLatica.png
+   :width: 780px   
+   :align: center
+
+|Uradi| Dopustit ćemo vam da napravite proceduru koji crta 5 latica. **Mala pomoć**: Nakon što nacrtate jednu laticu, trebate okrenuti lik za 72 stupnja udesno.
+
+.. reveal:: sakrivanjeCvet1
+   :showtitle: Compare your solution with ours
+   :hidetitle: Hide the solution
+ 
+   **Moguće rješenje**
+     
+    .. image:: ../_images/procedure/Cvet.png
+	:width: 770px   
+	:align: center
+
+.. infonote::
+
+  |Vazno|   **Dakle, pomoću procedura olakšavamo pisanje programa i pronalaženje grešaka.**
+
+
+
+
+   
+   

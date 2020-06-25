@@ -1,0 +1,97 @@
+Izgled (Looks)
+==============
+
+U Scratch-u likovi imaju jednu ili više kostima. Mogućnost promjene kostima pruža nam mogućnost stvaranja zanimljivih programa i animacija. U tu svrhu koristimo blokove iz kategorije **Izgled (Looks)**.
+
+Razmišljanje, govor, mijenjanje veličina, promjena kostima
+----------------------------------------------------------
+
+Napravit ćemo program koji se zove Farma, a koji ima dva lika - djevojku (Avery) i pile (Chick). Smjestit ćemo ih u okruženje farme (pozadina Farma). Stavit ćemo pile u ruku djevojke. Djevojka će "nahraniti" pile i gledati kako raste. 
+
+.. image:: ../_images/izgled/Farma.png
+   :width: 900px   
+   :align: center
+
+Počet ćemo s skriptom djevojke. Za djevojku želimo:
+
+1. Njezina veličina za 50% veća od izvorne veličine (150%);
+2. Mislila je "So cute..."
+3. Ona će joj reći, "Go, go!"
+
+Stavit ćemo joj pile u ruku. Za pile želimo:
+
+1. Njegova veličina mora biti 50% manja od izvorne veličine (50%);
+2. Simulira pokrete kljucanja;
+3. Njegova veličina se povećava tijekom izvođenja programa.
+
+.. image:: ../_images/izgled/KodFarma.png
+   :width: 1200px   
+   :align: center
+
+.. reveal:: sakrivanjeFarma
+   :showtitle: Pogledaj video-uputstva za kreiranje programa Farma
+   :hidetitle: Sakrij video-uputstva
+ 
+   **Pogledaj proces izrade programa koji omogućava likovima da misle, govore, mijenjaju veličinu i kostime:**
+     
+   .. youtube:: VIDEO1
+      :width: 735
+      :height: 415
+      :align: center
+
+Kao što vidite, za izradu našeg programa Farma koristili smo nekoliko blokova iz kategorije **Izgled (Looks)**:
+
+•	Prilagodili smo veličinu lika pomoću blok |Size|;
+•	Promijenili smo veličinu lika pomoću bloka |SizeBy|;
+•	Likove misli smo prikazali pomoću bloka |Think2s|;
+•	Prikazali smo likov govor pomoću bloka |Say2s|;
+•	Izmijenili smo likov kostim pomoću bloka |Switch|.
+  
+.. |Size| image:: ../_images/izgled/Size.png
+.. |SizeBy| image:: ../_images/izgled/SizeBy.png
+.. |Think2s| image:: ../_images/izgled/Think2s.png
+.. |Say2s| image:: ../_images/izgled/Say2s.png
+.. |Switch| image:: ../_images/izgled/Switch.png
+.. |Repeat10| image:: ../_images/izgled/Repeat10.png
+.. |Uradi| image:: ../_images/Uradi.png
+
+Pored svega spomenutog, blok |Repeat10| bio je presudan za pravilno funkcioniranje našeg programa. Ponavljanje je moćan koncept jer kod čini kraćim, jasnijim i lakšim za uklanjanje pogrešaka. Pomoću ponavljanja piletu smo dozvolili da se "pomiče", tj. osigurali smo ponavljanje naredbe koja mijenja kostim. Blokovi za ponavljanje nalaze se u kategoriji **Upravljanje (Control)**. Ova kategorija sadrži važne blokove koji se koriste za kontrolu protoka programa.
+
+|Uradi| Napravite program koji će simulirati funkcioniranje semafora. **Mala pomoć**: Svjetla na semaforu ne mijenjaju se istom brzinom. Crveno i zeleno svjetlo ostaju dulje od žutog.
+
+.. reveal:: sakrivanjeSemafor
+   :showtitle: Pogledaj video-uputstva za kreiranje programa Traffic light
+   :hidetitle: Sakrij video-uputstva
+ 
+   **Pogledaj proces izrade programa koji omogućava simulaciju rada semafora:**
+     
+   .. youtube:: VIDEO2
+      :width: 735
+      :height: 415
+      :align: center
+
+.. |Say| image:: ../_images/izgled/Say.png
+.. |Think| image:: ../_images/izgled/Think.png
+.. |SwBcdrop| image:: ../_images/izgled/SwBcdrop.png
+.. |Show| image:: ../_images/izgled/Show.png
+.. |Hide| image:: ../_images/izgled/Hide.png
+
+.. mchoice:: IZadatak1
+   :answer_a: Osigurava da likove misli ostanu na pozornici.
+   :answer_b: Osigurava da se likove misli stalno mijenjaju.
+   :feedback_a: Odgovor je točan!    
+   :feedback_b: Da biste omogućili da se misli stalno mijenjaju, trebate koristiti odgovarajući blok za ponavljanje naredbe za prikaz likovih misli.
+   :correct: a
+
+   Skrećemo vam pažnju na postojanje blokova koji izvršavaju slične naredbe kao one koje smo predstavili u ovoj lekciji. Na primjer, blok |Say| osigurava da likov govor ne nestane s pozornice. Pretpostavljamo da možete zaključiti koja je svrha bloka |Think|.
+
+Pored gore navedenog, kategorija **Izgled (Looks)** sadrži još nekoliko blokova. 
+
+Na isti način na koji možemo birati kostime likova, možemo odabrati i pozadinu pozornice pomoću bloka |SwBcdrop|. 
+   
+Blokovi koji nam omogućuju prikazivanje |Show| ili skrivanje |Hide| lika su također korisni. Ove ćemo blokove koristiti u sljedećim lekcijama.
+
+Omogućit ćemo vam da sami otkrijete kako se možete igrati s bojom i izgledom lika pomoću blokova za promjenu boje ili efekta (*change...*), podešavanje boje ili efekta (*set...*), kao i za brisanje svih grafičkih prikaza efekata (*clear graphic effects*): 
+
+.. image:: ../_images/izgled/Color.png  
+   :align: center

@@ -1,0 +1,104 @@
+Zvuk (Sound)
+============
+
+Sposobnost dodavanja zvuka našim likovima, osim oblaka s mislima i tekstom u njima, daje nam priliku za stvaranje dinamičnijih i zanimljivijih programa. 
+
+Scratch ima bogatu biblioteku zvukova, kao i mogućnost snimanja vlastitog glasa ili preuzimanja zvučnih snimaka s našeg računala u .wav ili .mp3 format. formatu. Blokovi koji nam omogućavaju čuti zvuk nalaze se u kategoriji  **Zvuk (Sound)**.
+
+Oglašavanje likova
+------------------
+
+Nadogradit ćemo program *Farm*, koji se može naći na linku |https://scratch.mit.edu/projects/326422653/|, tako da djevojka (Avery) stvarno kaže "Go, go!", a pile (Chick) cvrkuće nakon dobrog obroka. 
+
+.. |https://scratch.mit.edu/projects/326422653/| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326422653/" target="_blank">https://scratch.mit.edu/projects/326422653/</a>
+
+Prvi korak bio bi snimiti zvuk - naš glas: snimit ćemo snimak i dodati ga u scenarij koji pripada djevojci; na snimku bi trebali reći: "Samo naprijed (Go, go)!"
+
+Snimanje zvuka
+
+Prije nego što snimimo zvuk, trebali bismo:
+
+•	podesimo da lik devojke bude aktivan (sličica lika mora imati plavi okvir oko njega na popisu likova);
+•	kliknite karticu Zvuk (Sound);
+•	odaberite opciju Snimi (Record).
+
+.. image:: ../_images/zvuk/Avery.png  
+   :align: center
+
+Otvori prozor **Record Sound**; unutar ovog prozora možemo započeti snimanje zvuka.
+
+1. kliknite crveni gumb i recite: "Samo naprijed! (Go, go!)";
+
+2. Preslušamo snimak klikom na dugme **Play** i, ako ste zadovoljni, klikni na dugme **Save**, a ako nismo, na dugme **Re-record** i ponovimo postupak;
+
+3. U kartici Zvuk (Sound) prikazuju se vizualni prikaz našeg snimka;
+
+4. U kategoriji Zvuk (Sound) prikazuju se blokovi koji omogućuju da se tijekom provođenja programa naš glas čuje.
+
+.. image:: ../_images/zvuk/GoGo.png  
+   :align: center
+
+Zvuk cvrkut pileta može se pronaći u  biblioteci  zvukova i učitati iz nje.
+
+Ne smijemo zaboraviti da lik pileta mora biti aktivan; inače će zvuk cvrkutanja biti dodan liku djevojčici.
+
+.. image:: ../_images/zvuk/Chirp.png  
+   :align: center
+
+Spremni smo dodati naredbe u kod.
+
+.. image:: ../_images/zvuk/KodFarmaZvuk.png
+   :width: 1200px
+   :align: center
+
+|Uradi| Remix projekt *Farma* koji se može naći na linku |https://scratch.mit.edu/projects/326422653/|. Snimite zvuk i dodajte odgovarajući blok skripti koja pripada liku za djevojku. Iz zvučne biblioteke dodajte odgovarajući zvuk cvrkutavanja skripti koja pripada liku piletu.
+  .. |Uradi| image:: ../_images/Uradi.png
+
+.. mchoice:: ZvukZadatak1
+   :answer_a: Da smo odabrali drugi blok, prvo bismo čuli svoj glas. Tekstualni oblak pojavio bi se tek nakon izgovora rečenice. 
+   :answer_b: Mogli smo upotrijebiti drugi blok i program bi se izvodio na isti način.
+   :feedback_a: Odgovor je točan!    
+   :feedback_b: To nije točno. U programu * Farma * zamijenite blok predstavljen na slici iznad, pokrenite program i analizirajte rezultat.
+   :correct: a
+
+   U programu Farma izabrali smo blok |GG| za dodavanje zvuka, a ne blok |GGUD|. Zašto?
+
+   .. |GGUD| image:: ../_images/zvuk/GGUD.png
+   .. |GG| image:: ../_images/zvuk/GG.png
+
+
+Sastavljanje glazbe
+-------------------
+
+.. |Ekstenzija| image:: ../_images/Ekstenzija.png
+
+Sastavljanje glazbe zahtijeva dodavanje nove kategorije bloka u sučelje Scratch. To se postiže klikom na gumb |Ekstenzija|, koji se nalazi u donjem lijevom kutu zaslona, a zatim odabirom proširenja **Glazba (Music)**.
+
+.. image:: ../_images/zvuk/Music.png  
+   :align: center
+
+Bez obzira na kojem jeziku govore, ljudi iz cijelog svijeta znaju uspavanku Frère Jacques. Ako ne znate pjesmu, potražite je na YouTubeu, a mi ćemo vam pomoći da je sastavite u programu Scratch.
+
+Kao svoj instrument odabrat ćemo električni klavir (1), a zatim ćemo povezati note tako da, kada pokrenemo program, počinje krenuti sviranje ove čuvene uspavanke.
+
+.. image:: ../_images/zvuk/FJ.png  
+   :align: center
+
+.. |Drums| image:: ../_images/zvuk/Drums.png
+
+|Uradi| Remix projekt *Frère Jacques* koji se može naći na linku |https://scratch.mit.edu/projects/326431999/| i dodajte blokove koji će pridonijeti „punoći zvuka“ (bubnjevi ili ritam odjeljak). Upotrijebite instrumente s padajućeg popisa bloka |Drums|. Upotrebom odgovarajućeg bloka iz kategorije **Zvuk (Sound)** povećajte glasnoću svakog stiha za 10.
+
+.. |https://scratch.mit.edu/projects/326431999/| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326431999/" target="_blank">https://scratch.mit.edu/projects/326431999/</a>
+
+|Izazov| Pokušajte otpjevati pjesmu Frère Jacques bez glazbe i snimite je. Dodajte ga u program Scratch **Frère Jacques**. Sigurno znamo da će to biti zanimljiv aranžman!
+   .. |Izazov| image:: ../_images/Izazov.png
+
+
+
+
+
+

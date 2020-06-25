@@ -1,0 +1,125 @@
+Grananje
+========
+
+.. |If| image:: ../_images/grananje/If.png
+.. |IfElse| image:: ../_images/grananje/IfElse.png
+.. |And| image:: ../_images/grananje/And.png
+.. |Or| image:: ../_images/grananje/Or.png
+.. |Not| image:: ../_images/grananje/Not.png
+
+Spomenuli smo da je ponavljanje jedne ili više naredbi (blokova) moćan koncept u programiranju.
+
+Jednako koristan i važan je **koncept grananja programa**. Grananje dopušta da se određeni skupovi blokova izvršavaju u programu, dok drugi nisu. Koje će se naredbe izvršavati ovisi o ispunjavanju **uvjeta**. Uvjet biste trebali shvatiti kao izjavu koja može biti **točno** ili **netočno**. 
+
+Iako smo, do sada, stvorili programe koji izvršavaju naredbe jednu za drugom, od početka do kraja programa, većina programa sadrži grananje.
+
+Postoje dva bloka za grananje i nalaze se u kategoriji **Upravljanje (Control)**:
+
+•	Blok |If| provjerava stanje i ako je uvjet **točno** pokreće blokove koji se nalaze unutar njega , i
+•	Blok |IfElse| provjerava uvjet i ako je uvjet **točno** pokreće jedan niz naredbi, a ako je rezultat **netočno** pokreće i drugi skup.
+
+.. |VeceOd| image:: ../_images/grananje/VeceOd.png
+.. |Jednako| image:: ../_images/grananje/Jednako.png
+.. |ManjeOd| image:: ../_images/grananje/ManjeOd.png
+
+Jedan način da se utvrdi ispunjava li se uvjet je da se iz kategorije **Operacije (Operators)**, jedan od **operatora za usporedbu**:
+
+•	veće od |VeceOd|; 
+•	manje od |ManjeOd|;
+•	jednako |Jednako|.
+
+.. mchoice:: GrananjeZ1
+   :answer_a: Kao rezultat izvođenja skripte A, program će napisati rečenicu "Kupit ću sladoled!".
+   :answer_b: Izvođenje skripte A i B imat će isti rezultat - programi će napisati rečenicu "Kupit ću sladoled!".
+   :answer_c: Kao rezultat izvođenja skripte B program će napisati rečenicu "Kupit ću sladoled!".  
+   :feedback_a: Pogledajte pažljivo operatora usporedbe u scenariju A. Vjerujemo da možete vidjeti da će program napisati rečenicu "Kupit ću sladoled!" samo ako je cijena sladoleda manja od 100 novčića.    
+   :feedback_b: Analizirajte kako je definiran operator za usporedbu u skripti A i kako je to u skripti B. Vjerujemo da to možete vidjeti u skripti A rečenicu "Kupit ću sladoled!" pisat će se samo ako je cijena sladoleda manja od 100 novčića. Pokretanje skripte B rečenica "Kupit ću sladoled!" pisat će ako je cijena manja ili jednaka 100 novčića.
+   :feedback_c: Dobro napravljeno! Program će napisati rečenicu "Kupit ću sladoled!" ako je cijena manja ili jednaka 100 novčića. 
+   :correct: c
+
+   Cijena sladoleda je 100 novčića. Analizirajte skripte prikazane na slici i odaberite ispravan odgovor.
+
+   .. image:: ../_images/grananje/Sladoled.png
+      :align: center
+
+Najlakši način za razumijevanje grananja je kreiranje programa koji simulira kviz. Kada korisniku postavimo pitanje i čekamo njegov odgovor, očekuje se da pružimo povratne informacije o tome je li odgovor točan ili ne. Informacije o ispravnosti odgovora možemo pružiti samo kad utvrdimo je li korisnički odgovor jednak ispravnom odgovoru.
+
+.. image:: ../_images/grananje/Kviz1.png
+   :align: center
+
+Iako se čini da smo kod pravilno napisali, i točan odgovor na pitanje "Koliko nogu ima pas?" je 4, korisnik bi mogao odgovoriti na pitanje upisivanjem niza umjesto broja. Drugim riječima, točan odgovor na pitanje nije samo 4, već i:
+
+•	četiri; 
+•	cetiri;
+•	four.
+
+Očito je da moramo pažljivije definirati uvjet, tj. da prihvatimo svaki mogući točan odgovor.
+
+Ovu situaciju možemo prevladati pomoću **logičkih operatera**, koje možemo pronaći u kategoriji **Operacije (Operators)**:
+
+•	i |And|; 
+•	ili |Or|;
+•	nije |Not|.
+
+U našem slučaju točan odgovor može biti **4 ili četiri ili cetiri ili four**. Zbog toga ćemo koristiti operator |Or| više puta za definiranje stanja. 
+
+.. image:: ../_images/grananje/Uslov.png
+   :align: center
+
+Kod koji prihvaća sve moguće oblike točnog odgovora izgleda ovako:
+
+.. image:: ../_images/grananje/Kviz2.png
+   :align: center
+
+.. |Uradi| image:: ../_images/Uradi.png
+
+|Uradi| Djeca koriste uređaje sa zaslonom osjetljivim na dodir. Nisu osobito vješti kada je u pitanju uporaba miša. Pomoći ćemo im da razviju ovu vještinu stvaranjem programa sa likom kamiona i cestom kao pozadinom. Kamion mora slijediti pokazivač miša korisnika i ići s lijeve strane na desnu stranu pozornice. Kamion na svom putu ne smije dodirivati rub ceste. Ako kamion dotakne rub u bilo kojem trenutku, vratit će se u prvobitni položaj (početni položaj na početku vožnje s lijeve strane staze - **x: -226**, **y: -41**). Za kreiranje ovog programa preporučujemo vam korištenje projekta *Putovanje*, koji možete pronaći na |https://scratch.mit.edu/projects/326419371/|.
+
+.. |https://scratch.mit.edu/projects/326419371/| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326419371/" target="_blank">https://scratch.mit.edu/projects/326419371/</a>
+
+.. image:: ../_images/grananje/Putovanje.png
+   :align: center
+
+Kao što vidite, Lik Kamion je prevelik za usku cestu nacrtanu na pozadinu pozornice koju koristimo u ovom programu. Također možete vidjeti da je cesta bijela i da crna crta odvaja cestu od trave. Te stvari morate imati na umu ako želite sami izraditi ovaj program. 
+
+.. reveal:: sakrivanjeGrananje1
+   :showtitle: Pogledaj jedno od mogućih rješenja
+   :hidetitle: Sakrij rješenje
+ 
+   **Moguće rješenje**
+     
+   .. image:: ../_images/grananje/Putovanje1.png 
+	:align: center
+
+.. |Izazov| image:: ../_images/Izazov.png
+
+|Izazov| Bilo bi dobro kada bi naš program mogao izmjeriti koliko dugo treba korisniku da se "dovede" kamion do kraja ceste. Nadogradite program dodavanjem skripte koja će mjeriti vrijeme potrebno korisniku da "završi putovanje". 
+
+.. reveal:: sakrivanjeGrananje2
+   :showtitle: Pogledaj jedno od mogućih rješenja
+   :hidetitle: Sakrij rješenje
+ 
+   **Moguće rješenje**
+     
+   .. image:: ../_images/grananje/Putovanje2.png 
+	:align: center
+
+|Izazov| Korištenjem koncepata i tehnika prikazanih u ovoj i prethodnim lekcijama stvorite program koji simulira unos lozinke pri radu na računalu. Neka program dozvoli korisniku da unese lozinku tri puta. Ako korisnik ne unese ispravnu lozinku, program će prestati raditi. Ako korisnik uspije, lik će promijeniti svoj kostim. Preporučujemo uporabu projekta koji možete pronaći na sljedećem linku |https://scratch.mit.edu/projects/326403173/|, gdje smo stavili lik Laptop koji ima dva kostima. Sretno!  
+
+.. |https://scratch.mit.edu/projects/326403173/| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326403173/" target="_blank">https://scratch.mit.edu/projects/326403173/</a>
+
+.. reveal:: sakrivanjePonavljanje1
+   :showtitle: Pogledaj jedno od mogućih rješenja
+   :hidetitle: Sakrij rješenje
+ 
+   **Moguće rješenje**
+     
+   Naše rješenje naći ćete u projektu **Lozinka rješenje**, na |https://scratch.mit.edu/projects/326417414/|. Preporučujemo da remiksirate projekt i objasnite naše rješenje pomoću komentara. Znamo da to možete!
+
+.. |https://scratch.mit.edu/projects/326417414/| raw:: html
+
+ <a href="https://scratch.mit.edu/projects/326417414/" target="_blank">https://scratch.mit.edu/projects/326417414/</a>

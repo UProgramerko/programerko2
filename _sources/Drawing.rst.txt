@@ -1,0 +1,109 @@
+Crtanje (Drawing)
+=================
+
+U programu Scratch svaki lik ima skrivenu olovku i mogućnost živih tragova na pozornici kada se kreće.
+
+Ako želimo crtati, moramo koristiti blokove iz kategorije **Olovka (Pen)**. Prvo moramo ovoj kategoriji blokova dodati sučelje Scratch. To možemo učiniti klikom na gumb |Ekstenzija|, koji se nalazi u donjem lijevom kutu zaslona i odabiru **Olovke (Pen)**.
+  .. |Ekstenzija| image:: ../_images/Ekstenzija.png
+
+.. image:: ../_images/crtanje/ekstOlovka.png 
+   :align: center
+
+Pojavit će se nova kategorija blokova **Olovka (Pen)**. Unutar nje imamo 9 blokova za crtanje na pozornici. Pomoću njih brišemo šareni stadij (*erase all*), spuštamo i podižemo olovku (*pen down*, *pen up*), lako kontroliramo boju i debljinu olovke (*set pen color*, *change pen color*, *set pen size*, *change pen size*). 
+
+.. image:: ../_images/crtanje/BlokoviOlovka.png 
+   :align: center
+
+U početku lik ima olovku u gornjem položaju. **Da bi crtež bio moguć, olovku moramo spustiti.**
+
+Crtanje "slobodnom rukom"
+-------------------------
+
+.. |LikOlovka| image:: ../_images/crtanje/LikOlovka.png
+  		    :width: 70px
+.. |OK1| image:: ../_images/kretanje/OK1.png
+
+.. |Uradi| image:: ../_images/Uradi.png
+
+Kad razmišljamo o crtežu slobodnim rukama, obično nas slikaju kako crtamo olovkom. Zbog toga ćemo koristiti lik |LikOlovka| stvoriti program koji će simulirati slobodni stil crtanja. Možete pronaći ovaj lik u biblioteci Likova. 
+
+U Scratchu se likovi crtaju sa svojim središtem. Ako želimo crtati olovkom "grafitnim vrhom", morat ćemo promijeniti sredinu lika. To možemo učiniti na kartici **Kostimi (Costumes)**. 
+
+VIDEO – CENTAR LIKA
+
+Kada smo proučavali liku kretanje na pozornici, predstavili smo blok |OK1|. Ako ove blokove pokrenemo beskonačno puta (*Forever*), lik će se neprestano kretati po pozornici prateći pokazivač miša. Stoga ovaj blok možemo koristiti za simulaciju crtanja - pomicanjem kursora miša po pozornici "crtat ćemo" na pozornici. 
+    
+Analizirajte sljedeće skripte:
+
+.. image:: ../_images/crtanje/KodSR.png  
+   :align: center
+
+|Uradi| Napravite program koji omogućava crtanje rukom i osigurava da se program prestane pokretati kad pritisnete tipku **s**. Potražite odgovarajuće blokove u kategorijama **Događaji (Events)** i **Upravljanje (Control)**.
+
+Kontroliranje kretanja lika pomoću tipkovnice i crtanja
+-------------------------------------------------------
+
+Ovo je izvrsna prilika za korištenje blokova koji omogućuju pomicanje lika pomoću strelica i nadogradnje tako da lik iscrtava linije određenom bojom i veličinom (debljinom). 
+
+Rasporedite tako da lik crta na sljedeći način:
+
+•	dok se pomiče udesno, trebao bi nacrtati plavu crtu, a veličina bi trebala biti 5 piksela;
+•	dok se pomiče lijevo, trebao bi nacrtati zelenu crtu, a veličina bi trebala biti 10 piksela;
+•	dok se kreće prema gore, trebao bi crtati crvenu liniju, a veličina bi trebala biti 15 piksela;
+•	dok se kreće prema dolje, trebao bi crtati žutu liniju, a veličina bi trebala biti 20 piksela.
+
+Stvorite sljedeće blokove:
+
+.. image:: ../_images/crtanje/strelicebojadebljina.png
+   :width: 840px   
+   :align: center
+
+Nacrtali smo sliku koju vidite ispod:
+
+.. image:: ../_images/crtanje/slobodnaruka.png
+   :width: 650px   
+   :align: center
+
+Pokušajte stvoriti program koji će nacrtati sličnu sliku. 
+
+Apsolutno kretanje i crtanje
+----------------------------
+
+.. image:: ../_images/crtanje/brodic.png
+   :width: 650px   
+   :align: center
+
+Analizirajući gornju sliku, možemo vidjeti da neće biti teško odrediti točke koje moramo povezati kako bismo nacrtali brod.  
+
+|Uradi| Napravite program koji će crtati brod pomoću svijetloplavih linija 5 debljine 5 piksela (veličina olovke). Ne zaboravite izbrisati sve na pozornici prije nego što crtanje započne. Također, ne zaboravite staviti Lik mačka kako bi bio pomorac na palubi broda.
+
+
+.. reveal:: sakrivanjeCrtanje1
+   :showtitle: Usporedite svoje rješenje s našim
+   :hidetitle: Sakrij rješenje
+ 
+   **Moguće rješenje**
+     
+    .. image:: ../_images/crtanje/BrodicKod.png
+	:width: 350px   
+	:align: center
+
+Žig
+---
+
+.. |BO2| image:: ../_images/crtanje/BO2.png
+
+.. |Paint| image:: ../_images/crtanje/Paint.png
+
+Ponekad trebamo crtati i zakretati slike koje su složenije na pozornici. Umjesto da ispočetka crtate željeni oblik, lakše je kreirati kostim određenog oblika, a zatim je množiti i zakretati pomoću blok žiga (stamp) |BO2|.
+
+  
+
+
+Samo trebamo koristiti |Paint| i nacrtati novi lik, a zatim nacrtati oblik koji želimo u uređivaču boja koji se nalazi na kartici **Kostimi (Costumes)**.
+
+OVDJE VIDEO DRAGONS
+
+Žig (Stamp) također možemo koristiti s kostimima likova koji se nalaze u Scratch biblioteci lika.
+
+

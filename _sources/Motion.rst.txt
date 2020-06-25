@@ -1,0 +1,188 @@
+Kretanje (Motion)
+=================
+
+Već ste upoznali Scratch korisničko sučelje, naučili ste kako stvarati likove i odrediti njihov položaj na pozornici. Sad je savršeno vrijeme da naučite kako ih pomicati pomoću naredbi (blokova) iz kategorije **Kretanje (Motion)**. Ovi će vam blokovi omogućiti jednostavne igre i animacije.
+
+Postoje 3 vrste blokova pomoću kojih možete pomicati svoj lik:
+
+•	Blokovi za apsolutno kretanje
+•	Blokovi za relativno kretanje
+•	Ostali blokovi pokreta
+
+Blokovi za apsolutno kretanje
+-----------------------------
+
+U kategoriji **Kretanje (Motion)**, postoji 4 bloka koji omogućuju apsolutno kretanje. 
+
+.. image:: ../_images/kretanje/AKBlokovi.png  
+   :align: center
+
+Te ćete blokove koristiti kad trebate programirati svoj lik za pomicanje na **određeno mjesto (točku) na pozornici**. 
+
+.. infonote::
+
+    **Mačka lovi miša...**
+        
+    Mačka se nalazi u središtu pozornice, a miš je u točki **(x:150 y:100)**. 
+
+    .. image:: ../_images/kretanje/MM1.png 
+       :width: 400px
+       :align: center
+
+    
+    Podsjećamo da je pozornica pravokutna površina širine 480 piksela i visine 360 piksela. Središte ima koordinate **(x:0 y:0)**.
+
+.. |AK1| image:: ../_images/kretanje/AK1.png
+.. |AK2| image:: ../_images/kretanje/AK2.png
+.. |AK3| image:: ../_images/kretanje/AK3.png
+.. |AK4| image:: ../_images/kretanje/AK4.png
+
+Ako želite da mačka uhvati miša, jednostavno možete koristiti blok |AK1|.
+
+.. image:: ../_images/kretanje/MM1a.png 
+   :width: 400px   
+   :align: center
+
+Ako želite da potjera dulje traje, možete koristiti blok |AK2|. S ovim blokom mačka će kliziti 1 sekundu od točke **(x:0 y:0)** do točke **(x:150 y:100)**.
+
+Korištenjem blokova |AK3| i |AK4| možete napraviti da se čini kao da se mačka lagano prikrada mišu:
+
+.. image:: ../_images/kretanje/MM34a.png  
+   :width: 800
+   :align: center
+
+Uvijek možete vidjeti trenutni položaj lika (trenutne vrijednosti **x:** i **y:**) ispod pozornice, na popisu likova.
+
+.. image:: ../_images/kretanje/XY.png  
+   :align: center
+
+.. mchoice:: AKZadatak1
+   :answer_a: Program A
+   :answer_b: Program B
+   :feedback_a: Odgovor je točan! Mačka je "uhvatila" sve miševe!    
+   :feedback_b: Hm.. Preporučujemo da pažljivo pročitate lekciju Položaj lika na pozornici.
+   :correct: a
+
+   Analizirajte položaj miševa prikazan na donjoj slici i odaberite program koji će omogućiti mački da "uhvati" sve miševe.
+
+   .. image:: ../_images/kretanje/AKZ1.png
+      :width: 700
+      :align: center
+
+.. |Vazno| image:: ../_images/Vazno.png
+
+.. infonote::
+
+    |Vazno|   **Dakle, koristeći blokove za apsolutno kretanje, recite svom liku točno gdje treba ići na pozornicu.**
+
+Blokovi za relativno kretanje
+-----------------------------
+
+.. |RKS2| image:: ../_images/kretanje/RKS2.png
+
+Relativno kretanje nije određeno lokacijom lika, već trenutnim položajem lika.
+
+U kategoriji **Kretanje (Motion)**, imate na raspolaganju nekoliko blokova koji omogućuju relativno kretanje. 
+
+.. image:: ../_images/kretanje/RKBlokovi.png  
+   :align: center
+
+Na primjeru gdje je mačka lovila miša, znali smo točno mjesto miša (točku u kojoj se nalazi). Situacije u kojima ne znamo lokaciju lika češća su pojava. U tim ćemo slučajevima koristitimo blokove za relativno kretanje za pomicanje naših likova.
+
+Kada je u pitanju relativno kretanje, vrlo je važno usmjeriti (okrenuti) lik u željenom smjeru. To postižemo povlačenjem strelice oko kruga bloka |RKS2|. 
+
+Dobro je znati da smjer prema 0 predstavlja prema gore, prema 90 je desno, prema 180 je dolje, a prema -90 je lijevo.
+
+.. image:: ../_images/kretanje/RKS1.png  
+   :width: 800
+   :align: center
+
+Uvijek možete vidjeti trenutni smjer lika ispod pozornice, na popisu likova u polju **Smjer (Direction)**.
+
+.. image:: ../_images/kretanje/XY.png 
+   :align: center
+
+.. mchoice:: RKZadatak1
+   :answer_a: Smjer: 90 (desno) Pozicija: (x: 50 y: -100)
+   :answer_b: Smjer: 180 (down) Pozicija: (x:50 y:100)
+   :feedback_a: Ponovno analizirajte program. Mijenja li okretanje lika za 90 stupnjeva?    
+   :feedback_b: Odgovor je točan! Dobro razumijete pokret lika!
+   :correct: b
+
+   Analizirajte program predstavljen na slici i odaberite što mislite o smjeru lika, kao i kakav će biti njegov položaj nakon završetka programa.
+
+   .. image:: ../_images/kretanje/RKZ1.png
+      :align: center
+
+.. infonote::
+
+    |Vazno|   **Dakle, pomoću blokova za relativno kretanje, kažete liku gdje se treba usmjeriti i pomicati u odnosu na njegov trenutni položaj.**
+
+
+Ostali blokovi kretanja
+-----------------------
+
+U kategoriji **Kretanje (Motion)**, imate na raspolaganju još 4 bloka koji omogućuju pomicanje lika. 
+
+.. image:: ../_images/kretanje/OKBlokovi.png   
+   :align: center
+
+.. |OK3| image:: ../_images/kretanje/OK3.png
+.. |OK4a| image:: ../_images/kretanje/OK4a.png
+.. |OK4b| image:: ../_images/kretanje/OK4b.png
+
+Pozornica je ograničen prostor. Kad lik dođe do ruba pozornice, bilo bi prirodno da se okrene i nastavi kretati u drugom smjeru. To ponašanje lika ćete omogućiti pomoću bloka |OK3|. Također ćete odlučiti kako se lik nastavlja kretati. Ako unutar bloka |OK4a| postavite stil rotacije lika **all around**, i dalje će se kretati naglavačke. To se neće dogoditi ako s padajućeg popisa bloka odaberete opciju |OK4b|.
+
+.. image:: ../_images/kretanje/OKRub12.png
+   :width: 800
+   :align: center
+
+Uvijek možete vidjeti trenutni stil vašeg kretanja lika ispod pozornice na popisu likova, u polju **Smjer (Direction)**.
+
+.. image:: ../_images/kretanje/XY.png
+   :width: 400px   
+   :align: center
+
+Vratimo se našim likovima: |macka| i |mis|. 
+
+.. |OK1| image:: ../_images/kretanje/OK1.png
+.. |OK1a| image:: ../_images/kretanje/OK1a.png
+.. |macka| image:: ../_images/kretanje/macka.png
+.. |mis| image:: ../_images/kretanje/mis.png
+
+Ako ne znamo točan položaj miša i želimo da mačka usmjeri prema njemu (okrenemo se prema njemu), možemo koristiti blok |OK1|. Trebamo samo izabrati lik miša |OK1a| s padajućeg popisa i problem je riješen.
+
+Pokazati ćemo vam kako djeluju posljednja dva bloka u sljedećem primjeru.
+
+.. infonote::
+
+    **Mačka lovi miša...**
+        
+    Mačka lovi miša i klizi prema njemu. Miš se neprestano okreće i kreće prema pokazivaču, kojim se krećemo po pozornici.
+
+    .. image:: ../_images/kretanje/OKPR1.png   
+       :align: center
+
+    
+    Iznad svakog lika nalazi se skripta koja omogućuje opisano ponašanje. 
+
+.. |Izazov| image:: ../_images/Izazov.png
+
+|Izazov| Nadogradite gore predstavljeni program dodavanjem još jednog lika - jabuke. Neka miš lovi jabuku, a mačka lovi miša. Neka se jabuka pomakne prema pokazivaču (koji kontroliramo), miš se treba kretati prema jabuci, a mačka prema mišu.
+
+.. image:: ../_images/kretanje/MMJ.png  
+   :width: 400
+   :align: center
+
+.. reveal:: sakrivanjeKretanje
+   :showtitle: Usporedite rješenje s našim
+   :hidetitle: Sakrij rješenje
+ 
+   **Moguće rješenje:**
+     
+   .. youtube:: QgCCzBw6DKU
+      :width: 735
+      :height: 415
+      :align: center
+   
+   
